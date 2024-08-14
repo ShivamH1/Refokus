@@ -27,7 +27,7 @@ function Navbar() {
           )}
         </div>
       </div>
-      <Button />
+      <Button title={"Start a Project"}/>
     </div>
   );
 }
