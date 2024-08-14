@@ -40,7 +40,7 @@ function Products() {
     },
   ];
   return (
-    <div>
+    <div className="mt-20">
       {products.map((elem, index) => (
         <Product elem={elem}/>
       ))}
