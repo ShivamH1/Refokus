@@ -19,7 +19,6 @@ function Cards() {
           para={false}
           title="GET IN TOUCH"
           heading="Let's get to it together"
-          hover={"bg-violet-600"}
         />
       </div>
     </div>
