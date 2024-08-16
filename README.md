@@ -26,11 +26,6 @@ This repository contains the source code for a React-based clone website of Refo
 ## Website's Screenshot
 
 ![alt text](public/Screenshot%20(133).png)
-![alt text](public/Screenshot%20(134).png)
-![alt text](public/Screenshot%20(135).png)
-![alt text](public/Screenshot%20(136).png)
-![alt text](public/Screenshot%20(137).png)
-![alt text](public/Screenshot%20(139).png)
 ![alt text](public/Screenshot%20(140).png)
 
 ## Live Website
