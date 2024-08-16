@@ -7,6 +7,7 @@ import Marquees from "./components/Marquees";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import './App.css';
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
