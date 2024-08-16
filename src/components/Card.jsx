@@ -1,9 +1,10 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 function Card({ width, start, para, title, heading, paragraph }) {
   return (
-    <div className={`w-1/2 bg-zinc-800 p-5 rounded-xl hover:bg-violet-600 ${width} min-h-[28rem] flex flex-col justify-between`}>
+    <motion.div whileHover={{padding : "25px"}} className={`w-1/2 bg-zinc-800 p-5 rounded-xl hover:bg-violet-600 ${width} min-h-[28rem] flex flex-col justify-between`}>
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
           <h3 className="">{title}</h3>
@@ -24,13 +25,13 @@ function Card({ width, start, para, title, heading, paragraph }) {
         )}
         {para && (
           <>
-            <p className="text-sm text-zinc-500 font-medium hover:text-yellow-50">
+            <p className="text-sm text-zinc-300 font-medium hover:text-yellow-50">
               {paragraph}
             </p>
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
