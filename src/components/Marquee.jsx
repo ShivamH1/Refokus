@@ -1,14 +1,29 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function Marquee({ imagesURL }) {
+function Marquee({ imagesurls, direction }) {
   return (
-    <div className="flex w-full py-8 gap-20 overflow-hidden whitespace-nowrap">
-      {imagesURL.map((url, index) => (
-        <img key={index} src={url} className="w-30 flex-shrink-0"></img>
-      ))}
-      {imagesURL.map((url, index) => (
-        <img key={index} src={url} className="w-30 flex-shrink-0"></img>
-      ))}
+    <div className="flex w-full overflow-hidden mb-16">
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-100%" }}
+        animate={{ x: direction === "left" ? "-100%" : "0" }}
+        transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
+        className="flex flex-shrink-0 gap-40 py-10 pr-40"
+      >
+        {imagesurls.map((url, index) => (
+          <img key={index} src={url} className="" />
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-100%" }}
+        animate={{ x: direction === "left" ? "-100%" : "0" }}
+        transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
+        className="flex flex-shrink-0 gap-40 py-10 pr-40"
+      >
+        {imagesurls.map((url, index) => (
+          <img key={index} src={url} className="" />
+        ))}
+      </motion.div>
     </div>
   );
 }
