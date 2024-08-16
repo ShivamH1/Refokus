@@ -6,6 +6,10 @@ import ttr from "../../public/videos/ttr.webm";
 import yir from "../../public/videos/yir.webm";
 import yahoo from "../../public/videos/yahoo.webm";
 import rainfall from "../../public/videos/rainfall.mp4";
+import layoutland from  "../../public/videos/layoutland.mp4";
+import cula from "../../public/videos/cula.mp4";
+import singularity from "../../public/videos/singularity.mp4";
+import brightwave from "../../public/videos/brightwave.mp4";
 
 function Products() {
   var products = [
@@ -44,6 +48,29 @@ function Products() {
       live: true,
       case: true,
     },
+    {
+      title : "Layout Land",
+      description : "An interactive learning game that can educate and entertain you on the basics of web layouts in Webflow.",
+      live : true,
+      case : false,
+    },
+    {
+      title : "Cula",
+      description : "We immersed ourselves in a 3D world we created to explain how Cula's platform collects data from carbon removal processes and converts them into carbon credit certificates",
+      live : true,
+    },
+    {
+      title : "Singularity",
+      description : "A new site for Singularity that supports their growth and showcases their true identity as industry innovators.",
+      live : true,
+      case : true,
+    },
+    {
+      title : "Brightwave",
+      description : "Brightwave, a category disruptor came to a us to build their brand from scratch and make a statement on its launch.",
+      live : true,
+      case : true,
+    }
   ];
 
   const [pos, setPos] = useState(null);
@@ -116,6 +143,46 @@ function Products() {
           >
             <video autoPlay muted loop>
               <source src={rainfall} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -pos + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" w-full h-full "
+          >
+            <video autoPlay muted loop>
+              <source src={layoutland} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -pos + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" w-full h-full "
+          >
+            <video autoPlay muted loop>
+              <source src={cula} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -pos + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" w-full h-full "
+          >
+            <video autoPlay muted loop>
+              <source src={singularity} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -pos + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" w-full h-full "
+          >
+            <video autoPlay muted loop>
+              <source src={brightwave} type="video/webm" />
               Your browser does not support the video tag.
             </video>
           </motion.div>
